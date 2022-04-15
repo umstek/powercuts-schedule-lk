@@ -1,0 +1,11 @@
+compatibility_date = "2022-04-15"
+compatibility_flags = []
+name = "powercuts-schedule-lk"
+route = ''
+type = "webpack"
+usage_model = ''
+workers_dev = true
+zone_id = ''
+
+[build]
+command = "pnpm build && pnpm bundle"

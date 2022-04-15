@@ -1,0 +1,30 @@
+{
+  "devDependencies": {
+    "@swc/cli": "^0.1.57",
+    "@swc/core": "^1.2.165",
+    "miniflare": "^2.4.0"
+  },
+  "name": "powercuts-schedule-lk",
+  "description": "Strictly for educational purposes only.",
+  "version": "0.1.0",
+  "main": "worker.js",
+  "scripts": {
+    "clean": "rm -rf dist worker",
+    "build": "swc ./src -d dist",
+    "bundle": "spack",
+    "start": "miniflare ./dist/web.js --watch --debug"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/umstek/powercuts-schedule-lk.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/umstek/powercuts-schedule-lk/issues"
+  },
+  "homepage": "https://github.com/umstek/powercuts-schedule-lk#readme",
+  "dependencies": {
+    "hono": "^0.5.10"
+  }
+}
