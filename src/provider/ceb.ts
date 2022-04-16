@@ -43,7 +43,7 @@ interface CEBAPIArgs {
   to: string;
 }
 
-export async function find(
+export async function getInterruptions(
   { acctNo, from, to }: CEBAPIArgs,
   rvt: string,
   { afKey, afValue }: { afKey: string; afValue: string },
@@ -67,7 +67,7 @@ export async function find(
     );
   }
 
-  const calendarJson = await calendarResponse.json();
+  const calendarJson: any = await calendarResponse.json();
   const interruptions = calendarJson.interruptions
     .map((i) => ({
       start: new Date(i.startTime),

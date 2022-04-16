@@ -1,22 +1,30 @@
 lockfileVersion: 5.3
 
 specifiers:
+  '@cloudflare/workers-types': ^3.5.1
   '@swc/cli': ^0.1.57
   '@swc/core': ^1.2.165
+  '@types/node': ^17.0.24
   hono: ^0.5.10
   miniflare: ^2.4.0
   typescript: ^4.6.3
 
 dependencies:
+  '@cloudflare/workers-types': 3.5.1
   hono: 0.5.10
 
 devDependencies:
   '@swc/cli': 0.1.57_@swc+core@1.2.165
   '@swc/core': 1.2.165
+  '@types/node': 17.0.24
   miniflare: 2.4.0
   typescript: 4.6.3
 
 packages:
+
+  /@cloudflare/workers-types/3.5.1:
+    resolution: {integrity: sha512-3InFTahEqziyJ2DSRL29TmrukGvxsijxwOP+Jb1gdihEuRLhwwtY49hgpExGm21HBu6E6Qr/RxlPUp2+o+qoUg==}
+    dev: false
 
   /@iarna/toml/2.2.5:
     resolution: {integrity: sha512-trnsAYxU3xnS1gPHPyU961coFyLkh4gAD/0zQ5mymY4yOZ+CYvsPqUbOFSw0aDM4y0tV7tiFxL/1XfXPNC6IPg==}
@@ -340,6 +348,10 @@ packages:
       '@swc/core-win32-arm64-msvc': 1.2.165
       '@swc/core-win32-ia32-msvc': 1.2.165
       '@swc/core-win32-x64-msvc': 1.2.165
+    dev: true
+
+  /@types/node/17.0.24:
+    resolution: {integrity: sha512-aveCYRQbgTH9Pssp1voEP7HiuWlD2jW2BO56w+bVrJn04i61yh6mRfoKO6hEYQD9vF+W8Chkwc6j1M36uPkx4g==}
     dev: true
 
   /@types/stack-trace/0.0.29:

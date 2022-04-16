@@ -1,5 +1,8 @@
 compatibility_date = "2022-04-15"
 compatibility_flags = []
+kv_namespaces = [
+  {binding = "COMMON", id = "b817e26540f1471196ca44494da06e93", preview_id = "b817e26540f1471196ca44494da06e93"},
+]
 name = "powercuts-schedule-lk"
 route = ''
 type = "webpack"
@@ -9,3 +12,6 @@ zone_id = ''
 
 [build]
 command = "pnpm build && pnpm bundle"
+
+[miniflare]
+kv_persist = true # Defaults to ./.mf/kv
