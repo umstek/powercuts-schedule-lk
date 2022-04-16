@@ -2,7 +2,8 @@
   "devDependencies": {
     "@swc/cli": "^0.1.57",
     "@swc/core": "^1.2.165",
-    "miniflare": "^2.4.0"
+    "miniflare": "^2.4.0",
+    "typescript": "^4.6.3"
   },
   "name": "powercuts-schedule-lk",
   "description": "Strictly for educational purposes only.",
@@ -13,7 +14,7 @@
     "build": "swc ./src -d dist",
     "bundle": "spack",
     "prestart": "pnpm clean",
-    "start": "miniflare ./dist/worker.dist.js --watch --debug"
+    "start": "pnpm clean && miniflare ./dist/worker.dist.js --watch --debug"
   },
   "repository": {
     "type": "git",

@@ -3,7 +3,7 @@
 // Uncomment for intellisense
 // import 'zx/globals';
 
-$.verbose = false;
+// $.verbose = false;
 
 const OUTAGE_MAP_URL = 'https://cebcare.ceb.lk/Incognito/OutageMap';
 const CALENDAR_DATA_URL = 'https://cebcare.ceb.lk/Incognito/GetCalendarData';

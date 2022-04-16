@@ -5,6 +5,7 @@ specifiers:
   '@swc/core': ^1.2.165
   hono: ^0.5.10
   miniflare: ^2.4.0
+  typescript: ^4.6.3
 
 dependencies:
   hono: 0.5.10
@@ -13,6 +14,7 @@ devDependencies:
   '@swc/cli': 0.1.57_@swc+core@1.2.165
   '@swc/core': 1.2.165
   miniflare: 2.4.0
+  typescript: 4.6.3
 
 packages:
 
@@ -593,6 +595,12 @@ packages:
     engines: {node: '>=8.0'}
     dependencies:
       is-number: 7.0.0
+    dev: true
+
+  /typescript/4.6.3:
+    resolution: {integrity: sha512-yNIatDa5iaofVozS/uQJEl3JRWLKKGJKh6Yaiv0GLGSuhpFJe7P3SbHZ8/yjAHRQwKRoA6YZqlfjXWmVzoVSMw==}
+    engines: {node: '>=4.2.0'}
+    hasBin: true
     dev: true
 
   /undici/4.13.0:
