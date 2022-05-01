@@ -5,13 +5,17 @@ kv_namespaces = [
 ]
 name = "powercuts-schedule-lk"
 route = ''
-type = "webpack"
+type = "javascript"
+account_id = "84852d6800f7db35978215369b76b2b7"
 usage_model = ''
 workers_dev = true
 zone_id = ''
 
 [build]
-command = "pnpm build && pnpm bundle"
+command = "pnpm build"
+
+[build.upload]
+format = "service-worker"
 
 [miniflare]
 kv_persist = true # Defaults to ./.mf/kv

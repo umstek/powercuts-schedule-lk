@@ -3,7 +3,10 @@
 // Uncomment for intellisense
 // import 'zx/globals';
 
-// $.verbose = false;
+// Temporary fix for certificate errors
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
+
+$.verbose = false;
 
 const OUTAGE_MAP_URL = 'https://cebcare.ceb.lk/Incognito/OutageMap';
 const CALENDAR_DATA_URL = 'https://cebcare.ceb.lk/Incognito/GetCalendarData';

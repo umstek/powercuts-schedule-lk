@@ -9,13 +9,12 @@
   "name": "powercuts-schedule-lk",
   "description": "Strictly for educational purposes only.",
   "version": "0.1.0",
-  "main": "./dist/worker.dist.js",
+  "main": "./dist/worker.js",
   "scripts": {
     "clean": "rm -rf dist",
-    "build": "swc ./src -d dist",
-    "bundle": "spack",
+    "build": "spack",
     "prestart": "pnpm clean",
-    "start": "pnpm clean && miniflare ./dist/worker.dist.js --watch --debug"
+    "start": "pnpm clean && miniflare ./dist/worker.js --watch --debug"
   },
   "repository": {
     "type": "git",
@@ -29,6 +28,7 @@
   "homepage": "https://github.com/umstek/powercuts-schedule-lk#readme",
   "dependencies": {
     "@cloudflare/workers-types": "^3.5.1",
-    "hono": "^0.5.10"
+    "hono": "^0.5.10",
+    "telegraf": "^4.7.0"
   }
 }

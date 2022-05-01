@@ -24,7 +24,11 @@ export async function getAFCookie() {
 }
 
 export async function getRVT() {
+  console.log('Getting RVT...');
+  
   let outageMapResponse = await fetch(OUTAGE_MAP_URL);
+  console.log('Got page');
+  
   if (!outageMapResponse.ok) {
     throw new Error(
       `${outageMapResponse.status} ${outageMapResponse.statusText}`,
@@ -33,6 +37,7 @@ export async function getRVT() {
 
   const outageMapHtml = await outageMapResponse.text();
   const rvt = RVT_REGEX.exec(outageMapHtml)[1];
+  console.log('Got RVT');
 
   return rvt;
 }
