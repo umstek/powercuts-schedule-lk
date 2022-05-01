@@ -7,6 +7,8 @@ const app = new Hono();
 
 app.get('/favicon.ico', (c) => c.notFound());
 
+app.get('/', (c) => c.json({ date: new Date() }));
+
 app.post('/ceb/af-cookie', async (c) => {
   const afCookie = await getAFCookie();
   await save('ceb/af-cookie', afCookie);
